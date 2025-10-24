@@ -12,7 +12,6 @@
 
 
 .banner-wrap {
-  /* feel free to use your own img  */
   background-image: url(assets/banner.jpg.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -59,16 +58,28 @@ header{
   opacity: 80%;
 }
 
-
+.card img,
+.project-image{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 5px;
+}
 
 .typing-container {
   font-size: 2rem;
   font-weight: 600;
+  font-family: monospace;
+  display: inline-block;
+  width: 23ch;
+  text-align: left;
 }
 
 /* tHIS will have the animated text */
 .typing-animation {
   position: relative;
+  background-color: blue;
+
 }
 
 .typing-animation::before {
@@ -80,11 +91,10 @@ header{
   width: 0;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid #00bfa5;
   animation:
     change-text 8s linear infinite,
     typing 8s steps(20, end) infinite,
-    blink 0.75s step-end infinite;
+    blink 0.5s step-end infinite;
 }
 
 @keyframes typing {
@@ -105,11 +115,11 @@ header{
   }
 
   80% {
-    width: 20ch;
+    width: 21ch;
   }
 
   90% {
-    width: 20ch;
+    width: 21ch;
   }
 
   100% {
@@ -121,27 +131,15 @@ header{
 
   0%,
   40% {
-    content: "Coding-Buddy";
+    content: "fullstack developer";
   }
 
   50%,
   90% {
-    content: "full-stack developer";
+    content: "Coding-Buddy";
   }
 
   100% {
-    content: "Coding-Buddy";
-  }
-}
-
-@keyframes blink {
-
-  from,
-  to {
-    border-color: transparent;
-  }
-
-  50% {
-    border-color: #00bfa5;
+    content: "fullstack developer";
   }
 }
