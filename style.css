@@ -1,5 +1,4 @@
 
-
 * {
   margin: 0;
   padding: 0;
@@ -58,13 +57,18 @@ header{
   opacity: 80%;
 }
 
-.card img,
-.project-image{
+
+#about img {
   width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 5px;
+  height: auto;              
+  object-fit: contain;       
+  object-position: center;  
+  border-radius: 8px;        
+  display: block;
+  margin: 0 auto;            
+  max-width: 250px;          
 }
+
 
 .typing-container {
   font-size: 2rem;
@@ -75,7 +79,6 @@ header{
   text-align: left;
 }
 
-/* tHIS will have the animated text */
 .typing-animation {
   position: relative;
   background-color: blue;
@@ -84,7 +87,6 @@ header{
 
 .typing-animation::before {
   content: "";
-  /* Content STARTS EMPTY AND WILL BE SET BY ANIMATION */
   position: absolute;
   top: 0;
   left: 0;
