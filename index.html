@@ -33,25 +33,29 @@
   <body class="bg-light">
     <div class="banner-wrap vh-100 vw-100 text-white">
       <div class="overlay"></div>
-      <header class="px-5 p-3 text-white">
+      <header class="px-5 p-3 text-white fixed-top">
         <div>
           <h3 class="float-md-start text-center">Portfolio</h3>
           <nav class="nav nav-masthead justify-content-center float-md-end">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#about-us">About us</a>
+            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </nav>
         </div>
       </header>
       <main
         class="d-flex flex-column align-items-center justify-content-center h-75 text-center"
       >
+
         <h1 class="display-1">I am Gomolemo Majafa</h1>
-        <p class="lead">Fullstack Developer.</p>
+        <div class="typing-container">
+         <span class="typing-animation"></span>
+</div>
       </main>
     </div>
 
-    <section>
+    <section id="about-us">
       <div class="container p-5">
         <div class="card">
           <div class="card-body">
@@ -108,7 +112,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="projects">
       <div class="container p-5">
         <h1 class="text-center"><mark>Projects</mark></h1>
         <div class="row">
@@ -131,15 +135,15 @@
           <div class="col-md-4 mt-3">
             <div class="card">
               <img
-                src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/bootstrap.png"
+                src="assets/youtube.jpg"
                 class="card-img-top"
                 alt="..."
               />
               <div class="card-body">
-                <h5 class="card-title">Portfolio</h5>
-                <p class="card-text">Built this with HTML, CSS & Bootstrap</p>
-                <a href="https://stellar-snickerdoodle-91bfbe.netlify.app/" target="_blank" class="btn btn-primary">View Website</a>
-                <a href="https://github.com/GOMOLEMO9925/my-Portfolio" target="_blank" class="btn btn-outline-dark"><i class="bi bi-code-slash"></i></a>
+                <h5 class="card-title">Netflix Landing Page</h5>
+                <p class="card-text">Built this with HTML & CSS </p>
+                <a href="https://my-fake-youtube.netlify.app" target="_blank" class="btn btn-primary">View Website</a>
+                <a href="https://github.com/GOMOLEMO9925/my-fakeTube" target="_blank" class="btn btn-outline-dark"><i class="bi bi-code-slash"></i></a>
               </div>
             </div>
           </div>
@@ -216,12 +220,12 @@
       </div>
     </section>
 
-    <section>
+    <section id="contact">
        <div class="container p-5">
         <div class="card p-3">
           <div class="card-body px-5 p-3 text-center">
            <h1 class="text-center"><mark>Let's Connect</mark></h1>
-                      <p class="lead">Would love to connect with fellow developers, employers looking for developers, or anyone looking to get web development done.</p>
+           <p class="lead">Would love to connect with fellow developers, employers looking for developers, or anyone looking to get web development done.</p>
            <a class="fs-2" href="https://www.instagram.com/_s.w.a.y//" target="_blank"><i class="bi bi-instagram m-2"></i></a>
            <a class="fs-2" href="https://www.facebook.com/thatboyfate" target="_blank"><i class="bi bi-facebook m-2"></i></a>
            <a class="fs-2" href="https://github.com/GOMOLEMO9925" target="_blank"><i class="bi bi-github m-2"></i></a>
@@ -269,5 +273,11 @@
         </div>
       </div>
     </section>
+
+  <footer class="bg-dark text-center text-white">
+        <div class="container p-5">
+            <p class="lead">Developed by Gomolemo Majafa using Bootstrap, for Zaio Bootstrap course</p>
+        </div>
+    </footer>
   </body>
 </html>

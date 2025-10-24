@@ -1,6 +1,4 @@
-/*
- * Globals
- */
+
 
 * {
   margin: 0;
@@ -12,31 +10,18 @@
  * Base structure
  */
 
-body {
-
-}
-
-/*
- * Header
- */
 
 .banner-wrap {
   /* feel free to use your own img  */
   background-image: url(assets/banner.jpg.png);
-  background-size: cover; /* fills the screen, no space */
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center; /* keeps your head near the top */
+  background-position: top center;
   position: relative;
   z-index: 1;
-
-  height: 100vh; /* full screen height */
 }
 
-.card-img-top{
-  height: 180px;
-  object-fit: cover;
-  
-}
+.banner
 .overlay {
   z-index: -1;
   height: 100%;
@@ -67,4 +52,96 @@ body {
 .nav-masthead .active {
   color: #fff;
   border-bottom-color: #fff;
+}
+
+header{
+  background:black;
+  opacity: 80%;
+}
+
+
+
+.typing-container {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* tHIS will have the animated text */
+.typing-animation {
+  position: relative;
+}
+
+.typing-animation::before {
+  content: "";
+  /* Content STARTS EMPTY AND WILL BE SET BY ANIMATION */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #00bfa5;
+  animation:
+    change-text 8s linear infinite,
+    typing 8s steps(20, end) infinite,
+    blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+
+  30% {
+    width: 19ch;
+  }
+
+  40% {
+    width: 19ch;
+  }
+
+  50% {
+    width: 0;
+  }
+
+  80% {
+    width: 20ch;
+  }
+
+  90% {
+    width: 20ch;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes change-text {
+
+  0%,
+  40% {
+    content: "Coding-Buddy";
+  }
+
+  50%,
+  90% {
+    content: "full-stack developer";
+  }
+
+  100% {
+    content: "Coding-Buddy";
+  }
+}
+
+@keyframes blink {
+
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #00bfa5;
+  }
 }
